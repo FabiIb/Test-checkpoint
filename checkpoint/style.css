@@ -85,7 +85,44 @@ footer{
     
 }
 
-h1, h2{
+.h1, .h2{
     margin-top: 40px;
     color: black;
+}
+
+@media screen and (max-width:600px) {
+    body{
+        overflow: hidden;
+    }
+    .containar{
+        display: flex;
+        flex-direction:column;
+     
+    }
+    aside{
+        width: 100%;
+    
+    }
+    .intercontainar{
+      width: 100%;
+      margin-left:0 ;
+      justify-content: space-evenly;
+      align-items: center;
+
+    }
+    .right{
+        justify-content: center !important;
+    }
+    .left{
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center !important;
+    }
+    .square{
+        width: 100%;
+        margin-left:0 ;
+       flex-direction: column-reverse;
+       align-items: center;
+
+      }
 }
